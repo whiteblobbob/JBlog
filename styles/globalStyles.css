@@ -1,7 +1,7 @@
 /* define custom font */
 @font-face {
     font-family: 'XDPrime';
-    src: url('assets/fonts/XDPrime-Regular.otf');
+    src: url('../assets/fonts/XDPrime-Regular.otf')
 }
 
 * {
@@ -18,6 +18,35 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+.black-button {
+    background-color: black;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.1s ease-in;
+}
+
+.black-button:hover {
+    background-color: rgb(37, 37, 37);
+    transition: background-color 0.1s ease-in;
+}
+
+.black-button p {
+    color: white;
+}
+
+.white-button {
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.1s ease-in;
+}
+
+.white-button:hover {
+    background-color: rgb(226, 226, 226);
+    transition: background-color 0.1s ease-in;
 }
 
 #header {

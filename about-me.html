@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/globalStyles.css">
-    <link rel="stylesheet" href='styles/blogStyles.css'>
+    <link rel="stylesheet" href="styles/aboutMeStyles.css">
 </head>
 <body>
     <header id="header">
@@ -23,23 +24,27 @@
     </header>
 
     <main id="main">
-        <section>
-            <h1 id="title"></h2>
-            <p id="author"></p>
-            
-            <!-- <img id="content-image" src="https://greekreporter.com/wp-content/uploads/2024/01/The-Ancient-Greek-Philosopher-Socrates.-Credit-lentina_x.-CC-BY-NC-2.0-flickr.jpg"> -->
+        <section id="profile-card">
+            <img src="assets/images/tsukasa.png">
 
-            <div id="paragraph"></div>
+            <div id="profile-card-description">
+                <h1>Joshua Kevin Wijaya</h1>
+                <p>Denpasar, Bali</p>
+                <p>23/10/2007</p>
+                <p>Primakara University</p>
+                <p>Teknik Informatika</p>
+            </div>
         </section>
 
-        <section id="share">
-            <h3>Bagikan Artikel:</h3>
+        <h2>Hobbies</h2>
+        <section id="hobbies">
+            <div>
+                <h3>Guitar</h3>
+            </div>
 
-            <button id="share-button-copy" class="share-button" title="Copy link">
-                <img src="assets/images/link.png" width="30px" height="30px">
-            </button>
-
-            <p id="share-notification"></p>
+            <div>
+                <h3>Programming</h3>
+            </div>
         </section>
     </main>
 
@@ -53,7 +58,5 @@
             <p>Copyright © 2026 Joshua Kevin Wijaya</p>
         </section>
     </footer>
-
-    <script src='scripts/blogScript.js'></script>
 </body>
 </html>

@@ -3,14 +3,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/globalStyles.css">
-    <link rel="stylesheet" href='styles/blogStyles.css'>
+    <link rel="stylesheet" href="styles/newBlogStyles.css">
 </head>
 <body>
     <header id="header">
         <button onclick="window.location.href = '/'">
             <h2>JBlog</h2>
         </button>
-        
+
         <nav id="navigation">
             <button class="white-button" onclick="window.location.href = '/new-blog.html'">
                 <p>+</p>
@@ -23,24 +23,24 @@
     </header>
 
     <main id="main">
-        <section>
-            <h1 id="title"></h2>
-            <p id="author"></p>
-            
-            <!-- <img id="content-image" src="https://greekreporter.com/wp-content/uploads/2024/01/The-Ancient-Greek-Philosopher-Socrates.-Credit-lentina_x.-CC-BY-NC-2.0-flickr.jpg"> -->
+        <form id="form">
+            <label for="title">Title:</label><br>
+            <input id="title">
+            <br>
 
-            <div id="paragraph"></div>
-        </section>
+            <label for="author">Author:</label><br>
+            <input id="author">
+            <br>
 
-        <section id="share">
-            <h3>Bagikan Artikel:</h3>
+            <label for="content">Content:</label><br>
+            <textarea id="content"></textarea>
 
-            <button id="share-button-copy" class="share-button" title="Copy link">
-                <img src="assets/images/link.png" width="30px" height="30px">
+            <br>
+
+            <button class="black-button" type="submit">
+                <p>Submit</p>
             </button>
-
-            <p id="share-notification"></p>
-        </section>
+        </form>
     </main>
 
     <footer id="footer">
@@ -54,6 +54,6 @@
         </section>
     </footer>
 
-    <script src='scripts/blogScript.js'></script>
+    <script src="scripts/newBlogScript.js"></script>
 </body>
 </html>

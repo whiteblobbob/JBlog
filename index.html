@@ -8,21 +8,30 @@
 </head>
 <body>
     <header id="header">
-        <h2>JBlog</h2>
+        <button onclick="window.location.href = '/'">
+            <h2>JBlog</h2>
+        </button>
+
         <nav id="navigation">
-            <button class="navigation-button">
+            <button class="white-button" onclick="window.location.href = '/new-blog.html'">
+                <p>+</p>
+            </button>
+
+            <button class="black-button" onclick="window.location.href = '/about-me.html'">
                 <p>About Me</p>
             </button>
         </nav>
     </header>
 
     <main id="main">
-        <section id="hero">
-            <h1>Temukan Informasi Baru</h1>
-            <p id="tagline">Tempat di mana semua orang bisa mendapat informasi-informasi baru</p>
-            <button id="start">
-                <p>Mulai Membaca</p>
-            </button>
+        <section id="hero-container">
+            <div id="hero">
+                <h1>Temukan Informasi Baru</h1>
+                <p id="tagline">Tempat di mana semua orang bisa mendapat informasi-informasi baru</p>
+                <button class="black-button" onclick="window.location.href = '/blog-list.html'">
+                    <p>Mulai Membaca</p>
+                </button>
+            </div>
         </section>
 
         <section id="image-container">

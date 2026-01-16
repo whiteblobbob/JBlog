@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/globalStyles.css">
-    <link rel="stylesheet" href='styles/blogStyles.css'>
+    <link rel="stylesheet" href="styles/blogListStyles.css">
 </head>
 <body>
     <header id="header">
@@ -23,23 +24,17 @@
     </header>
 
     <main id="main">
-        <section>
-            <h1 id="title"></h2>
-            <p id="author"></p>
-            
-            <!-- <img id="content-image" src="https://greekreporter.com/wp-content/uploads/2024/01/The-Ancient-Greek-Philosopher-Socrates.-Credit-lentina_x.-CC-BY-NC-2.0-flickr.jpg"> -->
+        <section id="blogs"></section>
 
-            <div id="paragraph"></div>
-        </section>
-
-        <section id="share">
-            <h3>Bagikan Artikel:</h3>
-
-            <button id="share-button-copy" class="share-button" title="Copy link">
-                <img src="assets/images/link.png" width="30px" height="30px">
-            </button>
-
-            <p id="share-notification"></p>
+        <section id="page-selector">
+            <button id="page-first"><<</button>
+            <button id="page-previous"><</button>
+            <form id="page-selector-form">
+                <input id="page"></input>
+                <button type="submit" style="display: none;"></button>
+            </form>
+            <button id="page-next">></button>
+            <button id="page-last">>></button>
         </section>
     </main>
 
@@ -54,6 +49,6 @@
         </section>
     </footer>
 
-    <script src='scripts/blogScript.js'></script>
+    <script src="scripts/blogListScript.js"></script>
 </body>
 </html>

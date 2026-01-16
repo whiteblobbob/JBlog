@@ -1,0 +1,45 @@
+#main {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#blogs {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: background-color 0.1s ease-in;
+}
+
+.post * {
+    margin: 0;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.post:hover {
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+}
+
+#page-selector {
+    margin-top: 20px;
+    display: flex;
+    width: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page {
+    width: 15px;
+}
