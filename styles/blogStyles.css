@@ -1,0 +1,32 @@
+#main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+@media (max-width: 640px) {
+    #main {
+        display: block;
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 640px) {
+    #share {
+        padding-left: 30px;
+    }
+}
+
+#content-image {
+    width: 100%;
+}
+
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
