@@ -58,13 +58,15 @@
 #hobbies div {
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 
 @media (max-width: 640px) {
     #hobbies {
-        width: 90%;
+        width: 75%;
         display: block;
     }
 

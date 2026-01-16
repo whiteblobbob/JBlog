@@ -29,7 +29,7 @@ if (postString) {
     document.getElementById('author').innerText = `By ${post.author}, ${formatTime(post.timestamp)}`;
     document.getElementById('paragraph').innerHTML = post.content;
 
-    document.getElementById('share-button-copy').addEventListener('click', ev => {
+    document.getElementById('copy-share-button').addEventListener('click', ev => {
         navigator.clipboard.writeText(window.location.href);
 
         const shareNotification = document.getElementById('share-notification');

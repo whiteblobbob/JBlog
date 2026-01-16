@@ -2,8 +2,12 @@
     padding: 30px;
 }
 
-#form input {
+input {
     margin-bottom: 10px;
+    height: 40px;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
 }
 
 #content {
@@ -11,4 +15,6 @@
     max-width: 750px;
     height: 250px;
     resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
 }
